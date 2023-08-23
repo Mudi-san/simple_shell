@@ -47,17 +47,3 @@ void help_unsetenv(void)
 /**
  * help_history - Displays information on the shellby builtin command 'history'.
  */
-void help_history(void)
-{
-	char *msg = "history: history\n\tDisplay or manipulate the history list.";
-
-	write(STDOUT_FILENO, msg, _strlen(msg));
-	msg = "\n\n\n\tDisplay the history list with line numbers, prefixing each modified";
-	write(STDOUT_FILENO, msg, _strlen(msg));
-	msg = "\n\tentery with a `*'.  An argument of N lists only the last N entries.";
-	write(STDOUT_FILENO, msg, _strlen(msg));
-	msg = "\n\n\n\tExit Status:";
-	write(STDOUT_FILENO, msg, _strlen(msg));
-	msg = "\n\tReturns success unless an invalid option is given or an error occurs.";
-	write(STDOUT_FILENO, msg, _strlen(msg));
-}
