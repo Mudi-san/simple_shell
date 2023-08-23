@@ -3,7 +3,6 @@
 void help_env(void);
 void help_setenv(void);
 void help_unsetenv(void);
-void help_history(void);
 
 /**
  * help_env - Displays information on the shellby builtin command 'env'.
@@ -43,7 +42,3 @@ void help_unsetenv(void)
 	msg = "message to stderr.\n";
 	write(STDOUT_FILENO, msg, _strlen(msg));
 }
-
-/**
- * help_history - Displays information on the shellby builtin command 'history'.
- */
